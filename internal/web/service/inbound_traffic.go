@@ -162,6 +162,7 @@ func (s *InboundService) addClientTraffic(tx *gorm.DB, traffics []*xray.ClientTr
 		).Error; err != nil {
 			logger.Warning("AddClientTraffic update data ", err)
 		}
+		delete(trafficByEmail, ct.Email)
 	}
 
 	// adjustTraffics converts delayed-start rows (negative ExpiryTime → absolute

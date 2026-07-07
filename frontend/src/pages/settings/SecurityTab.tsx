@@ -214,10 +214,18 @@ export default function SecurityTab({ allSetting, updateSetting, saveSetting }: 
         description: '',
         token: newToken,
         type: 'set',
-        onConfirm: (ok: boolean) => {
+        onConfirm: async (ok: boolean) => {
           if (ok) {
-            messageApi.success(t('pages.settings.security.twoFactorModalSetSuccess'));
-            updateSetting({ twoFactorToken: newToken, twoFactorEnable: true });
+            const next = {
+              ...allSetting,
+              twoFactorEnable: true,
+              twoFactorToken: newToken,
+            };
+            const msg = await saveSetting(next) as ApiMsg;
+            if (msg?.success) {
+              messageApi.success(t('pages.settings.security.twoFactorModalSetSuccess'));
+              updateSetting({ twoFactorToken: newToken, twoFactorEnable: true, hasTwoFactorToken: true });
+            }
           } else {
             updateSetting({ twoFactorEnable: false });
           }
