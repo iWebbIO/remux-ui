@@ -5,12 +5,12 @@
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 7633 nodes · 18247 edges · 387 communities (321 shown, 66 thin omitted)
+- 7633 nodes · 18247 edges · 388 communities (323 shown, 65 thin omitted)
 - Extraction: 81% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 3430 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `74c50eb1`
+- Built from commit: `45647da3`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -367,6 +367,7 @@
 - [[_COMMUNITY_Ismuxallowed|Ismuxallowed]]
 - [[_COMMUNITY_Sniffing|Sniffing]]
 - [[_COMMUNITY_Sniffingdest|Sniffingdest]]
+- [[_COMMUNITY_attachChildLifetime|attachChildLifetime]]
 - [[_COMMUNITY_Bash Menu|Bash Menu]]
 - [[_COMMUNITY_Default Settings|Default Settings]]
 - [[_COMMUNITY_Fail2Ban Support|Fail2Ban Support]]
@@ -416,7 +417,7 @@
 - **Nodes Page Layout** — media_05_nodes_dark_nodes_management_ui, media_05_nodes_dark_node_metrics_summary, media_05_nodes_dark_node_details_table [EXTRACTED 1.00]
 - **Swagger UI Layout Pattern** — media_08_api_docs_light_api_documentation, media_08_api_docs_light_authentication_endpoints, media_08_api_docs_light_inbounds_endpoints, media_08_api_docs_light_sidebar_navigation [EXTRACTED 1.00]
 
-## Communities (387 total, 66 thin omitted)
+## Communities (388 total, 65 thin omitted)
 
 ### Community 0 - "Inbound Vlessclient"
 Cohesion: 0.03
@@ -432,7 +433,7 @@ Nodes (7): 3X-UI v3.2.5, Add Group Button, Group Statistics Summary, Groups Page
 
 ### Community 3 - "Readme 3X-Ui"
 Cohesion: 0.20
-Nodes (9): 3x-ui via cloud-init README, 3x-ui via cloud-init, Customising, How it works, Per-provider usage, Validate before you deploy, Cloud deployment (unattended install), How it works (+1 more)
+Nodes (8): 3x-ui via cloud-init, Customising, How it works, Per-provider usage, Validate before you deploy, Cloud deployment (unattended install), How it works, Unattended install knobs
 
 ### Community 4 - "Network Monitoring"
 Cohesion: 0.40
@@ -555,8 +556,8 @@ Cohesion: 0.07
 Nodes (64): chunkEmails(), getAPIPortFromConfigData(), getAPIPortFromConfigPath(), Client, DB, Inbound, InboundClientIps, contains() (+56 more)
 
 ### Community 38 - "Wireguardinboundsettings Genwireguardlinkinput"
-Cohesion: 0.04
-Nodes (27): InboundFallback, GetDB(), JSONClientsFromInbound(), JSONFieldText(), SubService, Client, DB, ClientService (+19 more)
+Cohesion: 0.05
+Nodes (23): InboundFallback, GetDB(), JSONClientsFromInbound(), JSONFieldText(), SubService, ClientService, Client, DB (+15 more)
 
 ### Community 39 - "Subsettings Inboundinfomodalprops"
 Cohesion: 0.03
@@ -599,8 +600,8 @@ Cohesion: 0.06
 Nodes (66): applyExternalProxyTLSParams(), applyExternalProxyTLSToStream(), cloneVmessShareObj(), getHostFromXFH(), Context, searchHost(), T, TestApplyExternalProxy_ECHPropagates() (+58 more)
 
 ### Community 54 - "Section"
-Cohesion: 0.06
-Nodes (31): Node, GetManager(), synthNodeGuid(), ambiguousNodeGuids(), effectiveNodeGuid(), effectiveNodeKey(), FilterNodeSnapshot(), FriendlyProbeError() (+23 more)
+Cohesion: 0.07
+Nodes (28): GetManager(), synthNodeGuid(), ambiguousNodeGuids(), effectiveNodeGuid(), effectiveNodeKey(), FriendlyProbeError(), Context, DB (+20 more)
 
 ### Community 55 - "Subscriptionheader"
 Cohesion: 0.05
@@ -664,7 +665,7 @@ Nodes (55): asArray(), asBool(), asNumber(), asObject(), asPort(), asString(), b
 
 ### Community 70 - "Syncobservatories"
 Cohesion: 0.06
-Nodes (28): FileMode, GetBinFolderPath(), GetLogFolder(), ensureFileExists(), NewClearLogsJob(), GetBinaryName(), GetBinaryPath(), GetConfigPath() (+20 more)
+Nodes (29): FileMode, GetBinFolderPath(), GetLogFolder(), ensureFileExists(), NewClearLogsJob(), GetBinaryName(), GetBinaryPath(), GetConfigPath() (+21 more)
 
 ### Community 71 - "Balancerformvalue"
 Cohesion: 0.06
@@ -699,8 +700,8 @@ Cohesion: 0.05
 Nodes (37): DEST_OPTIONS, SniffingFieldsProps, TlsForm(), TlsFormProps, RealClientIpPreset, SockoptForm(), TRANSPORT_PROXY_FIELD, TRUSTED_HEADER_NETWORKS (+29 more)
 
 ### Community 79 - "Clienttrafficcellprops"
-Cohesion: 0.07
-Nodes (17): GetDBDSN(), IsSQLiteDB(), Client, File, InboundService, Mutex, RWMutex, ServerService (+9 more)
+Cohesion: 0.05
+Nodes (33): T, TestBackupDateSuffix(), TestSanitizeBackupHost(), backupDateSuffix(), checkPgRestoreCanRead(), collectCertFiles(), getPublicIP(), InboundService (+25 more)
 
 ### Community 80 - "Activefiltercount"
 Cohesion: 0.07
@@ -755,8 +756,8 @@ Cohesion: 0.06
 Nodes (36): AllSetting, AllSettingView, ApiToken, ApiTokenView, Client, ClientInbound, ClientRecord, ClientReverse (+28 more)
 
 ### Community 95 - "Domainsfor"
-Cohesion: 0.07
-Nodes (29): T, TestBackupDateSuffix(), TestSanitizeBackupHost(), backupDateSuffix(), checkPgRestoreCanRead(), collectCertFiles(), deriveVlessEncModes(), getPublicIP() (+21 more)
+Cohesion: 0.33
+Nodes (7): deriveVlessEncModes(), parseVlessEncAuths(), T, TestDeriveVlessEncModes(), TestParseVlessEncAuthsAddsStableIDs(), TestParseVlessEncAuthsHandlesMissingTrailingComma(), vlessEncAuthID()
 
 ### Community 96 - "Expectedipsfor"
 Cohesion: 0.11
@@ -791,8 +792,8 @@ Cohesion: 0.22
 Nodes (8): Capturing the Real Client IP, Multi-node, Scenario 1 — Cloudflare CDN, Scenario 2 — L4 tunnel / relay or Cloudflare Spectrum (PROXY protocol), Security note, Transport support matrix, Verifying, Where to set it
 
 ### Community 107 - "Formatinboundissue"
-Cohesion: 0.11
-Nodes (27): Warningf(), applySecrets(), ensureActionFor(), FreeLocalPort(), GetManager(), Mutex, Process, renderConfig() (+19 more)
+Cohesion: 0.14
+Nodes (21): Warningf(), applySecrets(), ensureActionFor(), FreeLocalPort(), GetManager(), Mutex, Process, renderConfig() (+13 more)
 
 ### Community 108 - "Formatinboundvalidation"
 Cohesion: 0.10
@@ -900,7 +901,7 @@ Nodes (27): Client, Inbound, Int32, Server, T, newCountingNodeServer(), perClien
 
 ### Community 134 - "Shadowsocksoutboundformsettings"
 Cohesion: 0.13
-Nodes (25): addInboundReconciling(), addOutboundReconciling(), addUserReconciling(), ensureAPIServices(), ensureStatsPolicy(), Config, Node, injectNodeEgresses() (+17 more)
+Nodes (21): TestEnsureAPIServices(), TestEnsureStatsPolicy(), ensureAPIServices(), ensureStatsPolicy(), Config, Node, injectNodeEgresses(), liftOutboundsXhttpSessionIDKeys() (+13 more)
 
 ### Community 135 - "Socksoutboundformsettings"
 Cohesion: 0.08
@@ -920,7 +921,7 @@ Nodes (12): Bot, Info(), Client, ClientService, FS, InboundService, ServerServic
 
 ### Community 139 - "Wireguardoutboundformpeer"
 Cohesion: 0.13
-Nodes (24): applyRemarkToLink(), applyVmessRemark(), expandEntry(), padBase64Sub(), parsedExternalOutbound(), parseExternalLink(), T, TestApplyRemarkEmptyKeepsLinkVerbatim() (+16 more)
+Nodes (23): applyRemarkToLink(), applyVmessRemark(), expandEntry(), parsedExternalOutbound(), parseExternalLink(), T, TestApplyRemarkEmptyKeepsLinkVerbatim(), TestApplyRemarkToLinkRewritesFragment() (+15 more)
 
 ### Community 140 - "Wireguardoutboundformsettings"
 Cohesion: 0.14
@@ -939,8 +940,8 @@ Cohesion: 0.08
 Nodes (25): compilerOptions, allowImportingTsExtensions, allowJs, checkJs, esModuleInterop, isolatedModules, jsx, lib (+17 more)
 
 ### Community 144 - "Httpupgradeform"
-Cohesion: 0.11
-Nodes (8): NordService, WarpService, NewErrorf(), SettingService, Request, SettingService, parseWarpError(), Duration
+Cohesion: 0.27
+Nodes (4): WarpService, Request, SettingService, parseWarpError()
 
 ### Community 145 - "Httpfields"
 Cohesion: 0.24
@@ -951,8 +952,8 @@ Cohesion: 0.20
 Nodes (22): clientsSettings(), emailsOf(), Client, Inbound, Protocol, T, mkInbound(), sortedEmails() (+14 more)
 
 ### Community 147 - "Httpupgradeform"
-Cohesion: 0.19
-Nodes (25): fakeMtgChildMain(), egressTestConfig(), Config, Inbound, M, T, mtprotoInbound(), TestEnsureAPIServices() (+17 more)
+Cohesion: 0.21
+Nodes (23): fakeMtgChildMain(), egressTestConfig(), Config, Inbound, M, T, mtprotoInbound(), TestInjectMtprotoEgress_BalancerTag() (+15 more)
 
 ### Community 148 - "Allsetting"
 Cohesion: 0.14
@@ -1043,8 +1044,8 @@ Cohesion: 0.11
 Nodes (14): HealShadowsocksClientMethods(), StripVlessInboundEncryption(), StripVmessClientSecurity(), ApiToken, ClientGroup, ClientInbound, FallbackParentInfo, HistoryOfSeeders (+6 more)
 
 ### Community 172 - "Realityscanresult"
-Cohesion: 0.21
-Nodes (19): T, initMutDB(), TestAggregateTrafficByEmails_LastOnlineIsMax(), TestApplyPathAndHostParams(), TestApplyRemarkToLink_NoFragmentAppends(), TestApplyTransport_EmptyOptsOmitted(), TestApplyVmessRemark_RawURLEncodingFallback(), TestConfiguredPublicHost_Priority() (+11 more)
+Cohesion: 0.20
+Nodes (20): padBase64Sub(), T, initMutDB(), TestAggregateTrafficByEmails_LastOnlineIsMax(), TestApplyPathAndHostParams(), TestApplyRemarkToLink_NoFragmentAppends(), TestApplyTransport_EmptyOptsOmitted(), TestApplyVmessRemark_RawURLEncodingFallback() (+12 more)
 
 ### Community 173 - "Setting"
 Cohesion: 0.19
@@ -1075,8 +1076,8 @@ Cohesion: 0.18
 Nodes (13): Infof(), Client, ClientService, Inbound, InboundService, SettingService, mustGetBool(), mustGetInt() (+5 more)
 
 ### Community 180 - "Apitoken"
-Cohesion: 0.26
-Nodes (17): Server, T, serverPort(), TestScrapeStats(), TestScrapeStatsUnreachable(), M, T, installFakeMtg() (+9 more)
+Cohesion: 0.22
+Nodes (19): Server, T, serverPort(), TestScrapeStats(), TestScrapeStatsUnreachable(), M, T, installFakeMtg() (+11 more)
 
 ### Community 181 - "Apitokenview"
 Cohesion: 0.18
@@ -1235,8 +1236,8 @@ Cohesion: 0.43
 Nodes (13): seedWireguardPeersToClients(), wireguardPeerEmail(), clearWGMigrationHistory(), createWGInbound(), Inbound, T, initWGMigrationDB(), reloadInboundSettings() (+5 more)
 
 ### Community 222 - "Isudpoutbound"
-Cohesion: 0.26
-Nodes (13): T, TestFilterNodeSnapshot(), TestHeartbeatPatch_ToUI_OfflinePreservesError(), TestHeartbeatPatch_ToUI_OnlineCopiesFields(), TestNodeMetricKey(), TestNodeService_Normalize_KeepsValidScheme(), TestNodeService_Normalize_OverridesUnknownScheme(), TestNodeService_Normalize_RejectsBadHost() (+5 more)
+Cohesion: 0.18
+Nodes (16): Node, FilterNodeSnapshot(), T, TestFilterNodeSnapshot(), TestHeartbeatPatch_ToUI_OfflinePreservesError(), TestHeartbeatPatch_ToUI_OnlineCopiesFields(), TestNodeMetricKey(), TestNodeService_Normalize_KeepsValidScheme() (+8 more)
 
 ### Community 223 - "Outboundtestmode"
 Cohesion: 0.33
@@ -1259,8 +1260,8 @@ Cohesion: 0.35
 Nodes (12): FS, SetDistFS(), Engine, T, newSPAFallbackTestEngine(), newSPAFallbackTestEngineWithBasePath(), TestPanelCSRFTokenRemainsExplicit(), TestPanelSPAFallbackExclusions() (+4 more)
 
 ### Community 229 - "Readyi18N"
-Cohesion: 0.33
-Nodes (12): isCommandForBot(), T, recordingDialTarget(), TestIsCommandForBotAllowsMatchingUsername(), TestIsCommandForBotAllowsUntargetedCommand(), TestIsCommandForBotKeepsLegacyBehaviorWhenUsernameUnavailable(), TestIsCommandForBotRejectsOtherUsername(), TestIsSupportedBotProxyScheme() (+4 more)
+Cohesion: 0.17
+Nodes (17): CallbackQuery, botUsername(), checkAdmin(), Tgbot, isCommandForBot(), T, recordingDialTarget(), TestIsCommandForBotAllowsMatchingUsername() (+9 more)
 
 ### Community 230 - "Httpaccount"
 Cohesion: 0.18
@@ -1327,8 +1328,8 @@ Cohesion: 0.38
 Nodes (9): Builder, DumpSQLite(), DumpSQLiteToBytes(), dumpTableData(), DB, quoteSQLiteText(), RestoreSQLite(), sqliteLiteral() (+1 more)
 
 ### Community 247 - "Tunnelnetwork"
-Cohesion: 0.31
-Nodes (5): CallbackQuery, botUsername(), checkAdmin(), Tgbot, Message
+Cohesion: 0.11
+Nodes (9): NordService, GetDBDSN(), IsSQLiteDB(), NewErrorf(), SettingService, Client, File, pgConnEnv() (+1 more)
 
 ### Community 248 - "Vlessfallback"
 Cohesion: 0.29
@@ -1389,6 +1390,10 @@ Nodes (8): Areas affected, Breaking changes, Checklist, How was this tested?, Sc
 ### Community 262 - "Xraylogmodal"
 Cohesion: 0.50
 Nodes (8): Engine, T, newAPIAuthTestEngine(), TestCheckAPIAuth_AcceptsVerifiedClientCert(), TestCheckAPIAuth_BearerSuccess(), TestCheckAPIAuth_EmptyVerifiedChainsFallsThrough(), TestCheckAPIAuth_RejectsUnauthenticated(), TestCheckAPIAuth_SessionLoginPasses()
+
+### Community 263 - "Buildinboundinfo"
+Cohesion: 0.21
+Nodes (5): DB, InboundClientIps, InboundService, mergeClientIpEntries(), clientIpEntry
 
 ### Community 264 - "Copytext"
 Cohesion: 0.42
@@ -1576,7 +1581,7 @@ Nodes (4): attachChildLifetime(), ensureKillOnExitJob(), Cmd, Handle
 
 ### Community 318 - "Xrayinfo"
 Cohesion: 0.50
-Nodes (4): 3x-ui on Hetzner Cloud README, 3x-ui on Hetzner Cloud, "App"-style listing, cloud-init (no image build)
+Nodes (3): 3x-ui on Hetzner Cloud, "App"-style listing, cloud-init (no image build)
 
 ### Community 319 - "Emailnotifications"
 Cohesion: 0.67
@@ -1599,13 +1604,17 @@ Cohesion: 0.67
 Nodes (3): T, TestAddInbound_ImportConvertsExternalProxyToHosts(), TestAddInbound_NoExternalProxyCreatesNoHosts()
 
 ### Community 327 - "Dnsoutboundsettings"
-Cohesion: 0.83
-Nodes (3): T, rulesOf(), TestStripDisabledRules()
+Cohesion: 0.35
+Nodes (9): addInboundReconciling(), addOutboundReconciling(), addUserReconciling(), freePort(), T, TestXrayAPI_E2E(), waitForPort(), IsExistingTagErr() (+1 more)
+
+### Community 377 - "attachChildLifetime"
+Cohesion: 0.50
+Nodes (4): attachChildLifetime(), ensureKillOnExitJob(), Cmd, Handle
 
 ## Knowledge Gaps
-- **1142 isolated node(s):** `DockerEntrypoint.sh script`, `DockerInit.sh script`, `smoke-noninteractive.sh script`, `name`, `private` (+1137 more)
+- **1141 isolated node(s):** `DockerEntrypoint.sh script`, `DockerInit.sh script`, `smoke-noninteractive.sh script`, `name`, `private` (+1136 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **66 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **65 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_

@@ -30,7 +30,7 @@
     "semantic_hash": ""
   },
   "frontend/public/openapi.json": {
-    "mtime": 1783414424.0707023,
+    "mtime": 1783413686.2588584,
     "ast_hash": "a4fb469869682f7930c0cca7d1b55d6a",
     "semantic_hash": ""
   },
@@ -340,8 +340,8 @@
     "semantic_hash": ""
   },
   "frontend/src/layouts/AppSidebar.tsx": {
-    "mtime": 1783414269.1954193,
-    "ast_hash": "7ce40b8b273fd6bb230ed403a1d0ae15",
+    "mtime": 1783326475.0186698,
+    "ast_hash": "869deebb07f8223dc71c27a0cffc4cee",
     "semantic_hash": ""
   },
   "frontend/src/layouts/PanelLayout.tsx": {
@@ -1030,8 +1030,8 @@
     "semantic_hash": ""
   },
   "frontend/src/pages/settings/SubscriptionGeneralTab.tsx": {
-    "mtime": 1783414274.2478135,
-    "ast_hash": "67ac90c55d991acc17d2240e3b07dc16",
+    "mtime": 1783326475.0737803,
+    "ast_hash": "534cd7afd76ec74a0b5e4152e6fff141",
     "semantic_hash": ""
   },
   "frontend/src/pages/settings/TelegramTab.tsx": {
@@ -2330,8 +2330,8 @@
     "semantic_hash": ""
   },
   "install.sh": {
-    "mtime": 1783414223.1660688,
-    "ast_hash": "2dd5f4fbd75247b6c5cf6be705946316",
+    "mtime": 1783413686.2698448,
+    "ast_hash": "0b869b332fd1b9c9a542b8b1cde7f9c0",
     "semantic_hash": ""
   },
   "internal/config/config.go": {
@@ -3855,8 +3855,8 @@
     "semantic_hash": ""
   },
   "internal/web/service/panel/panel.go": {
-    "mtime": 1783414262.142544,
-    "ast_hash": "8458bd9d7c48ccb8bb576750155b6e6c",
+    "mtime": 1783326475.2483578,
+    "ast_hash": "e085f0fbbd35d24afa1be0d0710f4687",
     "semantic_hash": ""
   },
   "internal/web/service/panel/panel_other.go": {
@@ -4340,13 +4340,13 @@
     "semantic_hash": ""
   },
   "update.sh": {
-    "mtime": 1783414233.1128466,
-    "ast_hash": "bae710591f0a248026479b939b501e81",
+    "mtime": 1783413686.2968442,
+    "ast_hash": "78a29ebd6fce5fabf20f48f1cdb688c7",
     "semantic_hash": ""
   },
   "x-ui.sh": {
-    "mtime": 1783414246.0960774,
-    "ast_hash": "a29cd9a3c1798e1f7d77fcd4c9c61ca4",
+    "mtime": 1783413686.2978466,
+    "ast_hash": "37daa04db4301d8897032a010609063a",
     "semantic_hash": ""
   },
   ".agents/rules/graphify.md": {
@@ -4370,8 +4370,8 @@
     "semantic_hash": ""
   },
   ".github/ISSUE_TEMPLATE/config.yml": {
-    "mtime": 1783414201.6543777,
-    "ast_hash": "e21aed3a13dd3a453618492f2c4a9049",
+    "mtime": 1783326474.9770708,
+    "ast_hash": "f37b6e43b87c40c448e1dac2b753b5ca",
     "semantic_hash": ""
   },
   ".github/ISSUE_TEMPLATE/feature_request.yaml": {
@@ -4380,8 +4380,8 @@
     "semantic_hash": ""
   },
   ".github/ISSUE_TEMPLATE/question.yaml": {
-    "mtime": 1783414211.4486718,
-    "ast_hash": "ced3b85741fd5ede84aa3b6c9af1ea7f",
+    "mtime": 1783326474.9770708,
+    "ast_hash": "e92bce4f82c55e59ed3eafc648dee633",
     "semantic_hash": ""
   },
   ".github/dependabot.yml": {
@@ -4400,8 +4400,8 @@
     "semantic_hash": ""
   },
   ".github/workflows/claude-bot.yml": {
-    "mtime": 1783414196.789229,
-    "ast_hash": "ae97adece0a7ee55aeb90a1c55285701",
+    "mtime": 1783326474.9790697,
+    "ast_hash": "5bcd6849c63f3f67262c220392b8e0fd",
     "semantic_hash": ""
   },
   ".github/workflows/cleanup_caches.yml": {
@@ -4415,8 +4415,8 @@
     "semantic_hash": ""
   },
   ".github/workflows/docker.yml": {
-    "mtime": 1783414174.2511766,
-    "ast_hash": "d86675606175deb86bafb3497e282220",
+    "mtime": 1783326474.9800699,
+    "ast_hash": "9942b0970ba673081f9b85894db20832",
     "semantic_hash": ""
   },
   ".github/workflows/mutation.yml": {
@@ -4445,43 +4445,43 @@
     "semantic_hash": ""
   },
   "CONTRIBUTING.md": {
-    "mtime": 1783414346.1027372,
-    "ast_hash": "8afee3c6338d9c5276957a539fa0af98",
+    "mtime": 1783326474.98307,
+    "ast_hash": "a5141ec2b1eec537c8f9b36020ed9320",
     "semantic_hash": ""
   },
   "README.ar_EG.md": {
-    "mtime": 1783414336.8952582,
-    "ast_hash": "6eecb9cca3a1a55879b0c4a6a6e2bc49",
+    "mtime": 1783413829.5163085,
+    "ast_hash": "17d986b3bb2a1c8861c86d1452e72bc1",
     "semantic_hash": ""
   },
   "README.es_ES.md": {
-    "mtime": 1783414329.9551013,
-    "ast_hash": "211c9bf0f0ded4547ff3a15a51b38b4f",
+    "mtime": 1783413829.5163085,
+    "ast_hash": "cb9edf68078ae715f58e0d54516fc474",
     "semantic_hash": ""
   },
   "README.fa_IR.md": {
-    "mtime": 1783414324.178638,
-    "ast_hash": "69b13c03dd2b9cc0fed979df5e823bfa",
+    "mtime": 1783413829.5173242,
+    "ast_hash": "9bbac9334059f3c0f0ef0135b843d455",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1783414294.137833,
-    "ast_hash": "2efb72ea995cb9a1a2df2177ea333eaf",
+    "mtime": 1783413829.5173242,
+    "ast_hash": "88a48f57ad7cdb350a74b7e8b5b6290d",
     "semantic_hash": ""
   },
   "README.ru_RU.md": {
-    "mtime": 1783414316.0055091,
-    "ast_hash": "5a31d77deded7e8058fd08af12cff88a",
+    "mtime": 1783413829.5181835,
+    "ast_hash": "174724ca70925fe5de66f56fb983e194",
     "semantic_hash": ""
   },
   "README.tr_TR.md": {
-    "mtime": 1783414308.7523966,
-    "ast_hash": "9464454856581e85d32bb3cb8170e520",
+    "mtime": 1783413829.518694,
+    "ast_hash": "d53c205d4ec9444bc1e9e688ecb9670e",
     "semantic_hash": ""
   },
   "README.zh_CN.md": {
-    "mtime": 1783414301.057619,
-    "ast_hash": "1a3d18d3b64efa69c38e788e8fdef0ab",
+    "mtime": 1783413829.518694,
+    "ast_hash": "bb9cb541c7da55c6c1efa41f05a02011",
     "semantic_hash": ""
   },
   "deploy/README.md": {
@@ -4495,8 +4495,8 @@
     "semantic_hash": ""
   },
   "deploy/cloud-init/cloud-init.yaml": {
-    "mtime": 1783414253.7544637,
-    "ast_hash": "8d0085bdaa916fa2ad1dde994e034a67",
+    "mtime": 1783326474.9876394,
+    "ast_hash": "464ab77733669ce5b34a38819594c5df",
     "semantic_hash": ""
   },
   "deploy/marketplace/hetzner/README.md": {
